@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Domain.Entities;
 using Domain.Repositories.Common;
 using Infrastructure.Context;

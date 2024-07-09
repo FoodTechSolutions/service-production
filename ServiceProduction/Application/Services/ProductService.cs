@@ -147,4 +147,23 @@ public class ProductService : IProductService
             return Result.FailResult(e.Message);
         }
     }
+
+    public Result RemoveIngredient(Guid productIngredientId)
+    {
+        var productIngredient = _productRepository.GetProductIngredient(productIngredientId);
+
+        if (productIngredient == null)
+            return Result.FailResult("Link not found!");
+
+        _productRepository.RemoveProductIngredient(productIngredient);
+        
+        return Result.SuccessResult("Link removed successfully");
+    }
+
+    public Result GetAllWithIngredients()
+    {
+        var products = _productRepository.GetAll();
+        var ingredients = _productRepository.
+        
+    }
 }

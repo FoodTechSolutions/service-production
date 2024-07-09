@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Domain.Entities;
 using Domain.Repositories;
 using Infrastructure.Context;
@@ -15,6 +17,21 @@ public class ProductRepository : EfRepository<Product>, IProductRepository
     {
         _context = context;
         _logger = logger;
+    }
+
+    public ProductIngredient? GetProductIngredient(Guid id)
+    {
+        try
+        {
+            var result = _context.ProductsIngredients.FirstOrDefault(x => x.Id == id);
+            
+            return result;
+        }
+        catch (Exception e)
+        {
+            _logger.Log(LogLevel.Error, e.Message);
+            return null;
+        }
     }
 
     public void AddRangeProductIngredient(List<ProductIngredient> itens)

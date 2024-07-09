@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Domain.Entities;
 using Domain.Repositories.Common;
 
@@ -7,4 +8,5 @@ public interface IProductRepository : IAsyncRepository<Product>
 {
     void AddRangeProductIngredient(List<ProductIngredient> itens);
     void RemoveProductIngredient(ProductIngredient item);
+    ProductIngredient? GetProductIngredient(Guid id);
 }

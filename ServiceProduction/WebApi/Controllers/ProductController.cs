@@ -1,26 +1,27 @@
-using System;
-using Domain.DTO;
+using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 
 namespace WebApi.Controllers;
 
-[ApiController]
-public class ProductionController : Controller
+public class ProductController : Controller
 {
     private readonly ILogger<ProductionController> _logger;
+    private readonly IProductService _productService;
     
-    public ProductionController(ILogger<ProductionController> logger)
+    public ProductController(ILogger<ProductionController> logger, IProductService productService)
     {
         _logger = logger;
+        _productService = productService;
     }
     
-    [HttpPost]
-    public IActionResult ReciveOrder(ReceivingOrderDto reciveOrderDto)
+    [HttpGet]
+    public IActionResult GetProducts()
     {
         try
         {
-            return Ok();
+            var products = _productService.GetAllWithIngredients(); 
+            
+            return Ok(products);
         }
         catch (Exception e)
         {
@@ -28,9 +29,9 @@ public class ProductionController : Controller
             return BadRequest();
         }
     }
-
-    [HttpPost]
-    public IActionResult FinishProduction(Guid productionId)
+    
+    [HttpGet]
+    public IActionResult GetIngredientsByProduct(Guid productId)
     {
         try
         {
