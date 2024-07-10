@@ -19,14 +19,17 @@ public class ProductController : Controller
     {
         try
         {
-            var products = _productService.GetAllWithIngredients(); 
+            var products = _productService.GetAllWithIngredients();
+
+            if (products.Success)
+                return Ok(products.Object);
             
-            return Ok(products);
+            return BadRequest(products.Message);
         }
         catch (Exception e)
         {
             _logger.Log(LogLevel.Error, e.Message);
-            return BadRequest();
+            return BadRequest(e.Message);
         }
     }
     
@@ -35,12 +38,17 @@ public class ProductController : Controller
     {
         try
         {
-            return Ok();
+            var product = _productService.GetByProductId(productId);
+
+            if (product.Success)
+                return Ok(product.Object);
+                
+            return BadRequest(product.Message);
         }
         catch (Exception e)
         {
             _logger.Log(LogLevel.Error, e.Message);
-            return BadRequest();
+            return BadRequest(e.Message);
         }
     }
 }

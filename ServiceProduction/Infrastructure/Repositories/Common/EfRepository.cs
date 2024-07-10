@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using Domain.Entities;
 using Domain.Repositories.Common;
 using Infrastructure.Context;
@@ -18,8 +19,17 @@ public abstract class EfRepository<TEntity> : RepositoryBase<TEntity>, IAsyncRep
         _context = context;
     }
 
-    public IEnumerable<TEntity> GetAll() =>
-        DbSet.Where(x => x.DeletedAt == null).OrderBy(x => x.UpdateAt).ToListAsync().Result;
+    public IEnumerable<TEntity> GetAll(params Expression<Func<TEntity, object>>[] includes)
+    {
+        IQueryable<TEntity> query = DbSet.Where(x => x.DeletedAt == null);
+
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+
+        return query.OrderBy(x => x.UpdateAt).ToListAsync().Result;
+    }
 
     public void Add(TEntity entity)
     {

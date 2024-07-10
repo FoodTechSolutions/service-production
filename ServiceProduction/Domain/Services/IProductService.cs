@@ -13,4 +13,5 @@ public interface IProductService
     Result LinkIngredient(List<Guid> ingredientId, Guid productId);
     Result RemoveIngredient(Guid productIngredientId);
     Result GetAllWithIngredients();
+    Result GetByProductId(Guid productId);
 }
