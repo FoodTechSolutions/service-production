@@ -21,7 +21,7 @@ public class ProductionService : IProductionService
         _logger = logger;
     }
     
-    public Result ReceiveOrder(ProductionDto model)
+    public Result ReceiveOrder(ReceivingOrderDto model)
     {
         try
         {
@@ -35,7 +35,7 @@ public class ProductionService : IProductionService
 
             _productionRepository.Add(production);
             
-            foreach (var item in model.Products)
+            foreach (var item in model.Items)
             {
                 var prod = products.FirstOrDefault(x => x.Name == item.Name);
 

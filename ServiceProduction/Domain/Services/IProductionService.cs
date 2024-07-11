@@ -4,7 +4,7 @@ namespace Domain.Services;
 
 public interface IProductionService
 {
-    Result ReceiveOrder(ProductionDto model);
+    Result ReceiveOrder(ReceivingOrderDto model);
     Result StartProduction(Guid productionId);
     Result CancelProduction(Guid productionId);
     Result FinishProduction(Guid productionId);
