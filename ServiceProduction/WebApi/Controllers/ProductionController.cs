@@ -18,6 +18,7 @@ public class ProductionController : Controller
     }
     
     [HttpPost]
+    [Route("ReciveOrder")]
     public IActionResult ReciveOrder(ReceivingOrderDto reciveOrderDto)
     {
         try
@@ -37,6 +38,7 @@ public class ProductionController : Controller
     }
 
     [HttpPost]
+    [Route("StartProduction")]
     public IActionResult StartProduction(Guid productionId)
     {
         try
@@ -56,6 +58,7 @@ public class ProductionController : Controller
     }
     
     [HttpPost]
+    [Route("FinishProduction")]
     public IActionResult FinishProduction(Guid productionId)
     {
         try
@@ -75,6 +78,7 @@ public class ProductionController : Controller
     }
     
     [HttpPost]
+    [Route("CancelProduction")]
     public IActionResult CancelProduction(Guid productionId)
     {
         try
