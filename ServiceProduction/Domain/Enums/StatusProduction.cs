@@ -5,5 +5,6 @@ public enum StatusProduction
     Received = 0,
     InProgress = 1,
     Ready = 2,
-    Finished = 3
+    Finished = 3,
+    Cancel = 99,
 }
