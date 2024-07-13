@@ -4,6 +4,12 @@ namespace Domain.Entities;
 
 public class ProductIngredient : BaseEntity
 {
+    public ProductIngredient()
+    {
+        SetCreatedAt();
+        SetUpdatedAt();
+    }
+    
     [ForeignKey("Product")]
     public Guid ProductId { get; private set; }
     [ForeignKey("Ingredient")]
@@ -12,8 +18,6 @@ public class ProductIngredient : BaseEntity
     public static ProductIngredient Create()
     {
         var result = new ProductIngredient();
-        result.SetCreatedAt();
-        result.SetUpdatedAt();
         return result;
     }
     
@@ -25,7 +29,7 @@ public class ProductIngredient : BaseEntity
     
     public ProductIngredient SetIngredientId(Guid ingredientId)
     {
-        ProductId = ingredientId;
+        IngredientId = ingredientId;
         return this;
     }
     

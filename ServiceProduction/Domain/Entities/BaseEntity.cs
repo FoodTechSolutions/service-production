@@ -4,21 +4,24 @@ public abstract class BaseEntity
 {
     public Guid Id { get; set; } = new Guid();
     public DateTime CreatedAt { get; protected set; }
-    public DateTime UpdateAt { get; protected set; }
+    public DateTime UpdatedAt { get; protected set; }
     public DateTime? DeletedAt { get; protected set; }
 
-    protected DateTime SetCreatedAt()
+    protected BaseEntity SetCreatedAt()
     {
-        return DateTime.UtcNow;
+        CreatedAt = DateTime.UtcNow;
+        return this;
     }
 
-    public DateTime SetUpdatedAt()
+    public BaseEntity SetUpdatedAt()
     {
-        return DateTime.UtcNow;
+        UpdatedAt = DateTime.UtcNow;
+        return this;
     }
     
-    public DateTime SetDeletedAt()
+    public BaseEntity SetDeletedAt()
     {
-        return DateTime.UtcNow;
+        DeletedAt = DateTime.UtcNow;
+        return this;
     }
 }

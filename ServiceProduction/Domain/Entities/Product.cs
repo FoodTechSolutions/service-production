@@ -2,7 +2,14 @@ namespace Domain.Entities;
 
 public class Product : BaseEntity
 {
-    public string Name { get; private set; }
+    public Product()
+    {
+        Name = string.Empty;
+        SetCreatedAt();
+        SetUpdatedAt();
+    }
+    
+    public string? Name { get; private set; }
     public Guid CategoryId { get; private set; }
     public double Price { get; private set; }
     public string Description { get; private set; }
@@ -12,13 +19,17 @@ public class Product : BaseEntity
     public static Product CreateProduct()
     {
         var result = new Product();
-        result.SetCreatedAt();
-        result.SetUpdatedAt();
         return result;
     }
 
-    public Product SetName(string name)
+    public Product SetName(string? name)
     {
+        if (name == null)
+            throw new ArgumentException("name cannot be empty");
+    
+        if (name != null && name.Length < 3)
+            throw new ArgumentException("the name cannot be less than 3 characters");
+
         Name = name;
         return this;
     }
@@ -31,6 +42,9 @@ public class Product : BaseEntity
 
     public Product SetPrice(double price)
     {
+        if (double.IsNegative(price))
+            throw new ArgumentException("the value cannot be negative");
+        
         Price = price;
         return this;
     }
@@ -48,6 +62,9 @@ public class Product : BaseEntity
     }
     public Product SetEstimative(int estimative)
     {
+        if (int.IsNegative(estimative))
+            throw new ArgumentException("the value cannot be negative");
+        
         Estimative = estimative;
         return this;
     }
