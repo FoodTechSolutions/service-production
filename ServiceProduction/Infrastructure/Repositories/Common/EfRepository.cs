@@ -28,7 +28,7 @@ public abstract class EfRepository<TEntity> : RepositoryBase<TEntity>, IAsyncRep
             query = query.Include(include);
         }
 
-        return query.OrderBy(x => x.UpdateAt).ToListAsync().Result;
+        return query.OrderBy(x => x.UpdatedAt).ToListAsync().Result;
     }
 
     public void Add(TEntity entity)

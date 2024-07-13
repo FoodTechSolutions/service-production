@@ -40,7 +40,11 @@ public class ProductionService : IProductionService
                 var prod = products.FirstOrDefault(x => x.Name == item.Name);
 
                 if (prod == null)
-                    continue;
+                {
+                    prod = Product.CreateProduct();
+                    prod.SetName(item.Name);
+                    _productRepository.Add(prod);
+                }
 
                 var productionProduct = ProductionProduct.CreateProductionProduct();
 

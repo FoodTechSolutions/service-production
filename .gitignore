@@ -24,3 +24,21 @@ ServiceProduction/Domain/bin/Debug/net8.0/
 ServiceProduction/Infrastructure/bin/Debug/net8.0/
 
 ServiceProduction/WebApi/bin/Debug/net8.0/
+
+ServiceProduction/Tests/bin/Debug/net8.0/cs/
+
+ServiceProduction/Tests/obj/Debug/net8.0/
+
+ServiceProduction/Tests/obj/
+
+ServiceProduction/Tests/bin/Debug/net8.0/zh-Hant/
+
+ServiceProduction/Tests/bin/Debug/net8.0/zh-Hans/
+
+ServiceProduction/Tests/bin/Debug/net8.0/runtimes/win/lib/net6.0/
+
+ServiceProduction/Tests/bin/Debug/net8.0/pt-BR/
+
+ServiceProduction/Tests/bin/Debug/net8.0/de/
+
+ServiceProduction/Tests/bin/Debug/net8.0/

@@ -6,6 +6,12 @@ namespace Domain.Entities;
 
 public class Production : BaseEntity
 {
+    public Production()
+    {
+        SetCreatedAt();
+        SetUpdatedAt();
+    }
+    
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public string Code { get; private set; }
     
@@ -21,8 +27,7 @@ public class Production : BaseEntity
     public static Production CreateProduction()
     {
         var result = new Production();
-        result.SetCreatedAt();
-        result.SetUpdatedAt();
+        result.Status = StatusProduction.Received;
         return result;
     }
     
