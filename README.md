@@ -63,4 +63,7 @@ Execute a aplicação e utilize o Swagger para explorar os endpoints disponívei
 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias via pull requests.
 
+![image](https://github.com/user-attachments/assets/9d67a6f6-5da1-4138-9fb7-bb332ab2eceb)
+
+
 
