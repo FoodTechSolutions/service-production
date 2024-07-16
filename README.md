@@ -66,3 +66,7 @@ Configure a conexão com o banco de dados conforme necessário.
 Execute a aplicação e utilize o Swagger para explorar os endpoints disponíveis.
 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias via pull requests.
+
+
+![image](https://github.com/user-attachments/assets/7d5b3103-1a9d-4535-9d5d-d53ec9000be5)
+
