@@ -1,4 +1,8 @@
 using System;
+using Application.BackgroundServices.Models;
+using Application.Configuration;
+using Application.Helpers;
+using Application.Services.Interface;
 using Domain.DTO;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -11,14 +15,16 @@ public class ProductionController : Controller
 {
     private readonly ILogger<ProductionController> _logger;
     private readonly IProductionService _productionService;
-    public ProductionController(ILogger<ProductionController> logger, IProductionService productionService)
+    private readonly IRabbitMqService _rabbitMqService;
+    public ProductionController(ILogger<ProductionController> logger, IProductionService productionService, IRabbitMqService rabbitMqService)
     {
         _logger = logger;
         _productionService = productionService;
+        _rabbitMqService = rabbitMqService;
     }
     
     [HttpPost]
-    [Route("ReciveOrder")]
+    [Route("ReceiveOrder")]
     public IActionResult ReciveOrder(ReceivingOrderDto reciveOrderDto)
     {
         try
@@ -89,6 +95,31 @@ public class ProductionController : Controller
                 return Ok(result.Message);
 
             return BadRequest(result.Message);
+        }
+        catch (Exception e)
+        {
+            _logger.Log(LogLevel.Error, e.Message);
+            return BadRequest(e.Message);
+        }
+    }
+
+
+    [HttpPost]
+    [Route("Publish")]
+    public IActionResult Publish(RabbitMqExampleModel request)
+    {
+        try
+        {
+            var model = new RabbitMqPublishModel<RabbitMqExampleModel>()
+            {
+                ExchangeName = EventConstants.RABBITMQ_EXAMPLE_EXCHANGE,
+                RoutingKey = string.Empty,
+                Message = request
+            };
+
+            _rabbitMqService.Publish(model);
+
+            return Ok(model);
         }
         catch (Exception e)
         {

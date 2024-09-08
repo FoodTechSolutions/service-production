@@ -13,7 +13,7 @@ public class Production : BaseEntity
     }
     
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public string Code { get; private set; }
+    public int Code { get; private set; }
     
     [Required]
     public string Order { get; private set; }
