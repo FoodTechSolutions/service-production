@@ -104,27 +104,27 @@ public class ProductionController : Controller
     }
 
 
-    [HttpPost]
-    [Route("Publish")]
-    public IActionResult Publish(RabbitMqExampleModel request)
-    {
-        try
-        {
-            var model = new RabbitMqPublishModel<RabbitMqExampleModel>()
-            {
-                ExchangeName = EventConstants.RABBITMQ_EXAMPLE_EXCHANGE,
-                RoutingKey = string.Empty,
-                Message = request
-            };
+    //[HttpPost]
+    //[Route("Publish")]
+    //public IActionResult Publish(RabbitMqExampleModel request)
+    //{
+    //    try
+    //    {
+    //        var model = new RabbitMqPublishModel<RabbitMqExampleModel>()
+    //        {
+    //            ExchangeName = EventConstants.RABBITMQ_EXAMPLE_EXCHANGE,
+    //            RoutingKey = string.Empty,
+    //            Message = request
+    //        };
 
-            _rabbitMqService.Publish(model);
+    //        _rabbitMqService.Publish(model);
 
-            return Ok(model);
-        }
-        catch (Exception e)
-        {
-            _logger.Log(LogLevel.Error, e.Message);
-            return BadRequest(e.Message);
-        }
-    }
+    //        return Ok(model);
+    //    }
+    //    catch (Exception e)
+    //    {
+    //        _logger.Log(LogLevel.Error, e.Message);
+    //        return BadRequest(e.Message);
+    //    }
+    //}
 }

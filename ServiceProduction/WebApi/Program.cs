@@ -7,6 +7,7 @@ using Infrastructure.Context;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using WebApi.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,29 +23,10 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ProductionContext>(options =>
     options.UseNpgsql(connectionString));
 
-builder.Services.AddScoped<IIngredientRepository, IngredientRepository>();
-builder.Services.AddScoped<IProductIngredientRepository, ProductIngredientRepository>();
-builder.Services.AddScoped<IProductionProductRepository, ProductionProductRepository>();
-builder.Services.AddScoped<IProductionRepository, ProductionRepository>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
+builder.Services.ConfigureServices();
 
-
-builder.Services.AddScoped<IProductionService, ProductionService>();
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IIngredientRepository, IngredientRepository>();
-builder.Services.AddScoped<IProductIngredientRepository, ProductIngredientRepository>();
-builder.Services.AddScoped<IProductionRepository, ProductionRepository>();
-builder.Services.AddScoped<IProductionProductRepository, ProductionProductRepository>();
-
-builder.Services.AddScoped<IRabbitMqService, RabbitMqService>();
-builder.Services.AddScoped<IProcessEventExampleService, ProcessEventExampleService>();
-builder.Services.AddHostedService<RabbitMqExampleHandler>();
-
-
-
-builder.Services.AddHostedService<RabbitMqExampleHandler>();
+builder.Services.AddHostedServices();
 
 var app = builder.Build();
 

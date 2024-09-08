@@ -1,3 +1,7 @@
+using Application.BackgroundServices.Models;
+using Application.Configuration;
+using Application.Helpers;
+using Application.Services.Interface;
 using Domain.DTO;
 using Domain.Entities;
 using Domain.Repositories;
@@ -11,13 +15,15 @@ public class ProductionService : IProductionService
     private readonly IProductionRepository _productionRepository;
     private readonly IProductRepository _productRepository;
     private readonly IProductionProductRepository _productionProductRepository;
+    private readonly IRabbitMqService _rabbitMqService;
     private readonly ILogger<ProductionService> _logger;
     
-    public ProductionService(IProductionRepository productionRepository, IProductRepository productRepository, IProductionProductRepository productionProductRepository, ILogger<ProductionService> logger)
+    public ProductionService(IProductionRepository productionRepository, IProductRepository productRepository, IProductionProductRepository productionProductRepository, ILogger<ProductionService> logger, IRabbitMqService rabbitMqService)
     {
         _productionRepository = productionRepository;
         _productRepository = productRepository;
         _productionProductRepository = productionProductRepository;
+        _rabbitMqService = rabbitMqService;
         _logger = logger;
     }
     
@@ -113,16 +119,18 @@ public class ProductionService : IProductionService
     {
         try
         {
-            var production = _productionRepository.GetById(productionId);
+            var model = new RabbitMqPublishModel<CancelProductionModel>()
+            {
+                ExchangeName = EventConstants.CANCEL_PRODUCTION_EXCHANGE,
+                RoutingKey = string.Empty,
+                Message = new CancelProductionModel()
+                {
+                    ProductionId = productionId
+                }
+            };
 
-            if (production == null)
-                return Result.FailResult("Production not found");
+            _rabbitMqService.Publish(model);
 
-            production
-                .CancelProduction()
-                .SetUpdatedAt();
-            
-            _productionRepository.Update(production);
             return Result.SuccessResult();
         }
         catch (Exception e)
