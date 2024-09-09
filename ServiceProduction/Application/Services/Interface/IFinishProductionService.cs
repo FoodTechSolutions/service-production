@@ -9,6 +9,6 @@ namespace Application.Services.Interface
 {
     public interface IFinishProductionService
     {
-        Task ProcessEvent(FinishProductionModel model)
+        Task ProcessEvent(FinishProductionModel model);
     }
 }

@@ -17,7 +17,7 @@ public class ProductionService : IProductionService
     private readonly IProductionProductRepository _productionProductRepository;
     private readonly IRabbitMqService _rabbitMqService;
     private readonly ILogger<ProductionService> _logger;
-    
+
     public ProductionService(IProductionRepository productionRepository, IProductRepository productRepository, IProductionProductRepository productionProductRepository, ILogger<ProductionService> logger, IRabbitMqService rabbitMqService)
     {
         _productionRepository = productionRepository;
@@ -26,7 +26,7 @@ public class ProductionService : IProductionService
         _rabbitMqService = rabbitMqService;
         _logger = logger;
     }
-    
+
     public Result ReceiveOrder(ReceivingOrderDto model)
     {
         try
@@ -40,7 +40,7 @@ public class ProductionService : IProductionService
                 .SetOrder(model.Order);
 
             _productionRepository.Add(production);
-            
+
             foreach (var item in model.Items)
             {
                 var prod = products.FirstOrDefault(x => x.Name == item.Name);
@@ -57,7 +57,7 @@ public class ProductionService : IProductionService
                 productionProduct
                     .SetProduction(production.Id)
                     .SetProduct(prod.Id);
-                
+
                 _productionProductRepository.Add(productionProduct);
             }
             return Result.SuccessResult();
@@ -68,7 +68,7 @@ public class ProductionService : IProductionService
             return Result.FailResult(e.Message);
         }
     }
-    
+
     public Result StartProduction(Guid productionId)
     {
         try
@@ -81,8 +81,20 @@ public class ProductionService : IProductionService
             production
                 .NextStatus()
                 .SetUpdatedAt();
-            
+
             _productionRepository.Update(production);
+            var model = new RabbitMqPublishModel<ProductionEvent>()
+            {
+                ExchangeName = EventConstants.START_PRODUCTION_EXCHANGE,
+                RoutingKey = string.Empty,
+                Message = new ProductionEvent()
+                {
+                    OrderId = Guid.Parse(production.Order),
+                }
+            };
+
+            _rabbitMqService.Publish(model);
+
             return Result.SuccessResult();
         }
         catch (Exception e)
@@ -104,7 +116,7 @@ public class ProductionService : IProductionService
             production
                 .NextStatus()
                 .SetUpdatedAt();
-            
+
             _productionRepository.Update(production);
             return Result.SuccessResult();
         }
@@ -119,13 +131,13 @@ public class ProductionService : IProductionService
     {
         try
         {
-            var model = new RabbitMqPublishModel<CancelProductionModel>()
+            var model = new RabbitMqPublishModel<ProductionEvent>()
             {
                 ExchangeName = EventConstants.CANCEL_PRODUCTION_EXCHANGE,
                 RoutingKey = string.Empty,
-                Message = new CancelProductionModel()
+                Message = new ProductionEvent()
                 {
-                    ProductionId = productionId
+                    OrderId = productionId
                 }
             };
 
@@ -138,5 +150,10 @@ public class ProductionService : IProductionService
             _logger.Log(LogLevel.Error, e.Message);
             return Result.FailResult(e.Message);
         }
+    }
+
+    public class ProductionEvent
+    {
+        public Guid OrderId { get; set; }
     }
 }

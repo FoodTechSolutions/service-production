@@ -48,10 +48,9 @@ namespace WebApi.Configuration
         public static IServiceCollection AddHostedServices(this IServiceCollection services)
         {
             services.AddHostedService<RabbitMqExampleHandler>();
-            services.AddHostedService<CancelProductionHandler>();
             services.AddHostedService<CreateProductionHandler>();
-            services.AddHostedService<StartProductionHandler>();
-            services.AddHostedService<FinishProductionHandler>();
+            //services.AddHostedService<StartProductionHandler>();
+            //services.AddHostedService<FinishProductionHandler>();
 
             return services;
         }
