@@ -26,12 +26,7 @@ namespace WebApi.Configuration
             services.AddScoped<IProductionProductRepository, ProductionProductRepository>();
 
             services.AddScoped<IRabbitMqService, RabbitMqService>();
-            services.AddScoped<IProcessEventExampleService, ProcessEventExampleService>();
 
-            services.AddScoped<IProcessEventExampleService, ProcessEventExampleService>();
-
-
-            services.AddScoped<IProcessEventExampleService, ProcessEventExampleService>();
 
             services.AddScoped<ICancelProductionService, CancelProductionService>();
             services.AddScoped<ICreateProductionService, CreateProductionService>();
@@ -47,7 +42,6 @@ namespace WebApi.Configuration
 
         public static IServiceCollection AddHostedServices(this IServiceCollection services)
         {
-            services.AddHostedService<RabbitMqExampleHandler>();
             services.AddHostedService<CreateProductionHandler>();
             //services.AddHostedService<StartProductionHandler>();
             //services.AddHostedService<FinishProductionHandler>();

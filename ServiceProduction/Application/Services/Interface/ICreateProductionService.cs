@@ -10,6 +10,6 @@ namespace Application.Services.Interface
 {
     public interface ICreateProductionService
     {
-        Task ProcessEventAsync(CreateOrderModel model);
+        Task ProcessEventAsync(CreateProductionModel model);
     }
 }

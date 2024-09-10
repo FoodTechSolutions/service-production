@@ -18,7 +18,7 @@ namespace Application.BackgroundServices
         private IConnection _connection;
         private IModel _channel;
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<RabbitMqExampleHandler> _logger;
+        private readonly ILogger<FinishProductionHandler> _logger;
         private string RABBIT_HOST;
         private string RABBIT_PORT;
         private string RABBIT_USERNAME;
@@ -26,7 +26,7 @@ namespace Application.BackgroundServices
 
         public FinishProductionHandler(
         IServiceProvider serviceProvider,
-        ILogger<RabbitMqExampleHandler> logger,
+        ILogger<FinishProductionHandler> logger,
         IConfiguration configuration)
         {
             _logger = logger;

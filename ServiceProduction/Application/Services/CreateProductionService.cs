@@ -19,7 +19,7 @@ namespace Application.Services
         IProductionProductRepository productionProductRepository) : ICreateProductionService
     {
 
-        public async Task ProcessEventAsync(CreateOrderModel model)
+        public async Task ProcessEventAsync(CreateProductionModel model)
         {
             try
             {

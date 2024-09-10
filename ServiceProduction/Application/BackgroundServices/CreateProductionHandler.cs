@@ -21,7 +21,7 @@ namespace Application.BackgroundServices
         private IConnection _connection;
         private IModel _channel;
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<RabbitMqExampleHandler> _logger;
+        private readonly ILogger<CreateProductionHandler> _logger;
         private string RABBIT_HOST;
         private string RABBIT_PORT;
         private string RABBIT_USERNAME;
@@ -29,7 +29,7 @@ namespace Application.BackgroundServices
 
         public CreateProductionHandler(
         IServiceProvider serviceProvider,
-        ILogger<RabbitMqExampleHandler> logger,
+        ILogger<CreateProductionHandler> logger,
         IConfiguration configuration)
         {
             _logger = logger;
@@ -97,7 +97,7 @@ namespace Application.BackgroundServices
             var value = Encoding.UTF8.GetString(e.Body.ToArray());
             try
             {
-                var model = JsonConvert.DeserializeObject<CreateOrderModel>(value);
+                var model = JsonConvert.DeserializeObject<CreateProductionModel>(value);
 
                 var service = scope.ServiceProvider.GetRequiredService<ICreateProductionService>();
 

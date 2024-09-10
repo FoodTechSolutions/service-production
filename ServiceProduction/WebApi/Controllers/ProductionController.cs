@@ -24,46 +24,6 @@ public class ProductionController : Controller
     }
     
     [HttpPost]
-    [Route("ReceiveOrder")]
-    public IActionResult ReciveOrder(ReceivingOrderDto reciveOrderDto)
-    {
-        try
-        {
-            var result = _productionService.ReceiveOrder(reciveOrderDto);
-            
-            if(result.Success)
-                return Ok(result.Message);
-
-            return BadRequest(result.Message);
-        }
-        catch (Exception e)
-        {
-            _logger.Log(LogLevel.Error, e.Message);
-            return BadRequest(e.Message);
-        }
-    }
-
-    [HttpPost]
-    [Route("StartProduction")]
-    public IActionResult StartProduction(Guid productionId)
-    {
-        try
-        {
-            var result = _productionService.StartProduction(productionId);
-            
-            if(result.Success)
-                return Ok(result.Message);
-
-            return BadRequest(result.Message);
-        }
-        catch (Exception e)
-        {
-            _logger.Log(LogLevel.Error, e.Message);
-            return BadRequest(e.Message);
-        }
-    }
-    
-    [HttpPost]
     [Route("FinishProduction")]
     public IActionResult FinishProduction(Guid productionId)
     {
@@ -102,29 +62,4 @@ public class ProductionController : Controller
             return BadRequest(e.Message);
         }
     }
-
-
-    //[HttpPost]
-    //[Route("Publish")]
-    //public IActionResult Publish(RabbitMqExampleModel request)
-    //{
-    //    try
-    //    {
-    //        var model = new RabbitMqPublishModel<RabbitMqExampleModel>()
-    //        {
-    //            ExchangeName = EventConstants.RABBITMQ_EXAMPLE_EXCHANGE,
-    //            RoutingKey = string.Empty,
-    //            Message = request
-    //        };
-
-    //        _rabbitMqService.Publish(model);
-
-    //        return Ok(model);
-    //    }
-    //    catch (Exception e)
-    //    {
-    //        _logger.Log(LogLevel.Error, e.Message);
-    //        return BadRequest(e.Message);
-    //    }
-    //}
 }

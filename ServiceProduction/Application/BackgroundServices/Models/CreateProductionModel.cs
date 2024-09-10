@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.BackgroundServices.Models
 {
-    public class CreateOrderModel
+    public class CreateProductionModel
     {
         public string Order { get; set; }
         public string Customer { get; set; }

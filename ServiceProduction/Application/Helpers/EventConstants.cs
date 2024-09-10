@@ -8,9 +8,6 @@ namespace Application.Helpers
 {
     public class EventConstants
     {
-        public const string RABBITMQ_EXAMPLE_EXCHANGE = "RABBITMQ_EXAMPLE_EXCHANGE";
-        public const string RABBITMQ_EXAMPLE_QUEUE = "RABBITMQ_EXAMPLE_QUEUE";
-
         public const string CREATE_PRODUCTION_EXCHANGE = "CREATE_PRODUCTION_EXCHANGE";
         public const string CREATE_PRODUCTION_QUEUE = "CREATE_PRODUCTION_QUEUE";
 
