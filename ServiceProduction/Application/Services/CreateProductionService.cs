@@ -33,25 +33,25 @@ namespace Application.Services
 
                 productionRepository.Add(production);
 
-                foreach (var item in model.Items)
-                {
-                    var prod = products.FirstOrDefault(x => x.Name == item.Name);
+                //foreach (var item in model.Items)
+                //{
+                //    var prod = products.FirstOrDefault(x => x.Name == item.Name);
 
-                    if (prod == null)
-                    {
-                        prod = Product.CreateProduct();
-                        prod.SetName(item.Name);
-                        productRepository.Add(prod);
-                    }
+                //    if (prod == null)
+                //    {
+                //        prod = Product.CreateProduct();
+                //        prod.SetName(item.Name);
+                //        productRepository.Add(prod);
+                //    }
 
-                    var productionProduct = ProductionProduct.CreateProductionProduct();
+                //    var productionProduct = ProductionProduct.CreateProductionProduct();
 
-                    productionProduct
-                        .SetProduction(production.Id)
-                        .SetProduct(prod.Id);
+                //    productionProduct
+                //        .SetProduction(production.Id)
+                //        .SetProduct(prod.Id);
 
-                    productionProductRepository.Add(productionProduct);
-                }
+                //    productionProductRepository.Add(productionProduct);
+                //}
             }
             catch (Exception e)
             {

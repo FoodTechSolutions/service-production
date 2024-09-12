@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\services\\productionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\services\\createproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\services\\createproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\backgroundservices\\createproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\backgroundservices\\createproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\helpers\\eventconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\helpers\\eventconstants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,12 +27,36 @@
       "RelativeMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C566D0AF-AF5C-493E-8CEC-683B34579F86}|Domain\\Domain.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\domain\\entities\\production.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C566D0AF-AF5C-493E-8CEC-683B34579F86}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\production.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E37E96F5-7940-4E18-84DB-F17D7B99D550}|Infrastructure\\Infrastructure.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\infrastructure\\repositories\\common\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E37E96F5-7940-4E18-84DB-F17D7B99D550}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\common\\efrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E37E96F5-7940-4E18-84DB-F17D7B99D550}|Infrastructure\\Infrastructure.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\infrastructure\\repositories\\productionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E37E96F5-7940-4E18-84DB-F17D7B99D550}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\productionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\backgroundservices\\startproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\backgroundservices\\startproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\backgroundservices\\createproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\backgroundservices\\createproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\services\\startproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\services\\startproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C566D0AF-AF5C-493E-8CEC-683B34579F86}|Domain\\Domain.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\domain\\repositories\\iproductionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C566D0AF-AF5C-493E-8CEC-683B34579F86}|Domain\\Domain.csproj|solutionrelative:domain\\repositories\\iproductionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\services\\interface\\istartproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\services\\interface\\istartproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\services\\interface\\icancelproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\services\\createproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\services\\createproductionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\webapi\\configuration\\depedencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FFE5DB1-9FE8-4E1E-B4D5-24E3E3580BD3}|WebApi\\WebApi.csproj|solutionrelative:webapi\\configuration\\depedencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\configuration\\rabbitmqpublishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\configuration\\rabbitmqpublishmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|d:\\tech-challenger-fiap\\service-production\\serviceproduction\\application\\backgroundservices\\finishproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E04A714-2B4E-498D-A1C9-C1448563DBDA}|Application\\Application.csproj|solutionrelative:application\\backgroundservices\\finishproductionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +102,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +114,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateProductionService.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\CreateProductionService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\CreateProductionService.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\CreateProductionService.cs",
+              "RelativeToolTip": "Application\\Services\\CreateProductionService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:13:33.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "EventConstants.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Helpers\\EventConstants.cs",
+              "RelativeDocumentMoniker": "Application\\Helpers\\EventConstants.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Helpers\\EventConstants.cs",
+              "RelativeToolTip": "Application\\Helpers\\EventConstants.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:47:04.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StartProductionHandler.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\StartProductionHandler.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundServices\\StartProductionHandler.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\StartProductionHandler.cs",
+              "RelativeToolTip": "Application\\BackgroundServices\\StartProductionHandler.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAASwF0AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:39:19.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Production.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Domain\\Entities\\Production.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Production.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Domain\\Entities\\Production.cs",
+              "RelativeToolTip": "Domain\\Entities\\Production.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAQwDoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T00:33:43.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductionService.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\ProductionService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ProductionService.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\ProductionService.cs",
+              "RelativeToolTip": "Application\\Services\\ProductionService.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAewHcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:41:21.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
@@ -103,33 +192,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EventConstants.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Helpers\\EventConstants.cs",
-              "RelativeDocumentMoniker": "Application\\Helpers\\EventConstants.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Helpers\\EventConstants.cs",
-              "RelativeToolTip": "Application\\Helpers\\EventConstants.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAiwA0AAAA2AAAA",
+              "DocumentIndex": 4,
+              "Title": "ProductionController.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Controllers\\ProductionController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductionController.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Controllers\\ProductionController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductionController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAUwB8AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:47:04.009Z",
+              "WhenOpened": "2024-09-09T21:41:15.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductionRepository.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Infrastructure\\Repositories\\ProductionRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ProductionRepository.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Infrastructure\\Repositories\\ProductionRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ProductionRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAQwA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T23:27:26.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateProductionHandler.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\CreateProductionHandler.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundServices\\CreateProductionHandler.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\CreateProductionHandler.cs",
+              "RelativeToolTip": "Application\\BackgroundServices\\CreateProductionHandler.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAASwF8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T21:41:46.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T23:16:00.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "CancelProductionModel.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
-              "RelativeDocumentMoniker": "Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
-              "RelativeToolTip": "Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAHAAAA",
+              "Title": "EfRepository.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Infrastructure\\Repositories\\Common\\EfRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\Common\\EfRepository.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Infrastructure\\Repositories\\Common\\EfRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\Common\\EfRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCMAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:39:07.837Z",
+              "WhenOpened": "2024-09-10T23:27:02.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "ProductionService.Test.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Tests\\Application\\ProductionService.Test.cs",
               "RelativeDocumentMoniker": "Tests\\Application\\ProductionService.Test.cs",
@@ -137,77 +265,62 @@
               "RelativeToolTip": "Tests\\Application\\ProductionService.Test.cs",
               "ViewState": "AQIAAKoAAAAAAAAAAAAAwLkAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:29:07.778Z",
+              "WhenOpened": "2024-09-09T22:29:07.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IStartProductionService.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\Interface\\IStartProductionService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Interface\\IStartProductionService.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\Interface\\IStartProductionService.cs",
+              "RelativeToolTip": "Application\\Services\\Interface\\IStartProductionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T23:26:18.204Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StartProductionService.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\StartProductionService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\StartProductionService.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\StartProductionService.cs",
+              "RelativeToolTip": "Application\\Services\\StartProductionService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowBgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T23:26:48.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductionRepository.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Domain\\Repositories\\IProductionRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Repositories\\IProductionRepository.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Domain\\Repositories\\IProductionRepository.cs",
+              "RelativeToolTip": "Domain\\Repositories\\IProductionRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T23:28:04.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CancelProductionModel.cs",
+              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
+              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
+              "RelativeToolTip": "Application\\BackgroundServices\\Models\\CancelProductionModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T22:39:07.837Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "FinishProductionHandler.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\FinishProductionHandler.cs",
-              "RelativeDocumentMoniker": "Application\\BackgroundServices\\FinishProductionHandler.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\FinishProductionHandler.cs",
-              "RelativeToolTip": "Application\\BackgroundServices\\FinishProductionHandler.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:01:31.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductionService.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\ProductionService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\ProductionService.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\ProductionService.cs",
-              "RelativeToolTip": "Application\\Services\\ProductionService.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAiwF8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T21:41:21.173Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductionController.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Controllers\\ProductionController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductionController.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Controllers\\ProductionController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\ProductionController.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAADgv1sAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T21:41:15.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateProductionHandler.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\CreateProductionHandler.cs",
-              "RelativeDocumentMoniker": "Application\\BackgroundServices\\CreateProductionHandler.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\CreateProductionHandler.cs",
-              "RelativeToolTip": "Application\\BackgroundServices\\CreateProductionHandler.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAowGUAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T21:41:46.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StartProductionHandler.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\StartProductionHandler.cs",
-              "RelativeDocumentMoniker": "Application\\BackgroundServices\\StartProductionHandler.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\BackgroundServices\\StartProductionHandler.cs",
-              "RelativeToolTip": "Application\\BackgroundServices\\StartProductionHandler.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAD4v1EAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T21:39:19.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "CancelProductionService.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\CancelProductionService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\CancelProductionService.cs",
@@ -215,12 +328,11 @@
               "RelativeToolTip": "Application\\Services\\CancelProductionService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:39:10.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:39:10.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "ICancelProductionService.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\Interface\\ICancelProductionService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Interface\\ICancelProductionService.cs",
@@ -228,12 +340,11 @@
               "RelativeToolTip": "Application\\Services\\Interface\\ICancelProductionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:39:14.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:39:14.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "RabbitMqService.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\Interface\\RabbitMqService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Interface\\RabbitMqService.cs",
@@ -241,12 +352,11 @@
               "RelativeToolTip": "Application\\Services\\Interface\\RabbitMqService.cs",
               "ViewState": "AQIAACAAAAAAAAAAAADgvy4AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:39:40.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:39:40.476Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
               "Title": "DepedencyInjection.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\Configuration\\DepedencyInjection.cs",
               "RelativeDocumentMoniker": "WebApi\\Configuration\\DepedencyInjection.cs",
@@ -254,12 +364,11 @@
               "RelativeToolTip": "WebApi\\Configuration\\DepedencyInjection.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAIwDIAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:09:25.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:09:25.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "WebApi\\appsettings.json",
@@ -267,25 +376,11 @@
               "RelativeToolTip": "WebApi\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-09T22:28:33.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:28:33.07Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CreateProductionService.cs",
-              "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\CreateProductionService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\CreateProductionService.cs",
-              "ToolTip": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\CreateProductionService.cs",
-              "RelativeToolTip": "Application\\Services\\CreateProductionService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAASwB8AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:13:33.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 21,
               "Title": "IFinishProductionService.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Services\\Interface\\IFinishProductionService.cs",
               "RelativeDocumentMoniker": "Application\\Services\\Interface\\IFinishProductionService.cs",
@@ -293,12 +388,11 @@
               "RelativeToolTip": "Application\\Services\\Interface\\IFinishProductionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:08:15.739Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:08:15.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "RabbitMqPublishModel.cs",
               "DocumentMoniker": "D:\\tech-challenger-fiap\\service-production\\ServiceProduction\\Application\\Configuration\\RabbitMqPublishModel.cs",
               "RelativeDocumentMoniker": "Application\\Configuration\\RabbitMqPublishModel.cs",
@@ -306,8 +400,7 @@
               "RelativeToolTip": "Application\\Configuration\\RabbitMqPublishModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T22:01:43.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T22:01:43.353Z"
             }
           ]
         }

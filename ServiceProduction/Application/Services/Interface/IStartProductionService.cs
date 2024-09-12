@@ -9,6 +9,6 @@ namespace Application.Services.Interface
 {
     public interface IStartProductionService
     {
-        Task ProcessEventAsync(StartProductionModel rquest);
+        Task ProcessEventAsync(Guid orderId);
     }
 }

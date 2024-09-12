@@ -5,5 +5,5 @@ namespace Domain.Repositories;
 
 public interface IProductionRepository : IAsyncRepository<Production>
 {
-    
+    Production GetOrderId(Guid orderId);
 }

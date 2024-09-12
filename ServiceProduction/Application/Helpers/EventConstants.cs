@@ -18,6 +18,5 @@ namespace Application.Helpers
         public const string CANCEL_PRODUCTION_QUEUE = "CANCEL_PRODUCTION_QUEUE";
 
         public const string FINISH_PRODUCTION_EXCHANGE = "FINISH_PRODUCTION_EXCHANGE";
-        public const string FINISH_PRODUCTION_QUEUE = "PRODUCTION_FINISH_PRODUCTION_QUEUE";
     }
 }

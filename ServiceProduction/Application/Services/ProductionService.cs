@@ -118,6 +118,18 @@ public class ProductionService : IProductionService
                 .SetUpdatedAt();
 
             _productionRepository.Update(production);
+
+            var model = new RabbitMqPublishModel<ProductionEvent>()
+            {
+                ExchangeName = EventConstants.FINISH_PRODUCTION_EXCHANGE,
+                RoutingKey = string.Empty,
+                Message = new ProductionEvent()
+                {
+                    OrderId = Guid.Parse(production.Order),
+                }
+            };
+
+            _rabbitMqService.Publish(model);
             return Result.SuccessResult();
         }
         catch (Exception e)

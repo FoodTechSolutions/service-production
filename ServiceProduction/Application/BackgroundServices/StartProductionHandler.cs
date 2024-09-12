@@ -81,7 +81,7 @@ namespace Application.BackgroundServices
                 _channel.QueueBind(
                     exchange: EventConstants.START_PRODUCTION_EXCHANGE,
                     queue: EventConstants.START_PRODUCTION_QUEUE,
-                    routingKey: string.Empty);
+                routingKey: string.Empty);
 
 
             }
@@ -97,11 +97,11 @@ namespace Application.BackgroundServices
             var value = Encoding.UTF8.GetString(e.Body.ToArray());
             try
             {
-                var model = JsonConvert.DeserializeObject<StartProductionModel>(value);
+                var model = JsonConvert.DeserializeObject<Start>(value);
 
                 var service = scope.ServiceProvider.GetRequiredService<IStartProductionService>();
 
-                await service.ProcessEventAsync(model);
+                await service.ProcessEventAsync(model.OrderId);
 
                 _channel.BasicAck(e.DeliveryTag, false);
             }
@@ -113,6 +113,11 @@ namespace Application.BackgroundServices
             {
                 scope.Dispose();
             }
+        }
+
+        public class Start
+        {
+            public Guid OrderId { get; set; }
         }
     }
 }

@@ -16,11 +16,11 @@ namespace Application.Services
         ILogger<StartProductionService> logger, 
         IProductionRepository productionRepository) : IStartProductionService
     {
-        public async Task ProcessEventAsync(StartProductionModel rquest)
+        public async Task ProcessEventAsync(Guid orderId)
         {
             try
             {
-                var production = productionRepository.GetById(rquest.ProductionId);
+                var production = productionRepository.GetOrderId(orderId);
 
                 production
                     .NextStatus()

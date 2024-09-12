@@ -27,7 +27,7 @@ public class Production : BaseEntity
     public static Production CreateProduction()
     {
         var result = new Production();
-        result.Status = StatusProduction.Received;
+        result.Status = StatusProduction.InProgress;
         return result;
     }
     
